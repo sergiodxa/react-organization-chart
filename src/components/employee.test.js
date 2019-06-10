@@ -2,6 +2,7 @@ import React from "react";
 import { render, fireEvent, waitForElement } from "@testing-library/react";
 
 import Employee from "./employee";
+import { Provider as EmployeeProvider } from "../contexts/employees";
 
 test("Employee", async () => {
   const onNewSubordinate = jest.fn();
@@ -24,14 +25,15 @@ test("Employee", async () => {
   };
 
   const { getByLabelText, asFragment } = render(
-    <Employee
-      {...employees[id]}
-      level={0}
-      employees={employees}
-      companyName="ACME Inc."
-      onNewSubordinate={onNewSubordinate}
-      highlightedTitle="CTO"
-    />
+    <EmployeeProvider value={employees}>
+      <Employee
+        {...employees[id]}
+        level={0}
+        companyName="ACME Inc."
+        onNewSubordinate={onNewSubordinate}
+        highlightedTitle="CTO"
+      />
+    </EmployeeProvider>
   );
 
   expect(asFragment()).toMatchSnapshot();

@@ -1,22 +1,25 @@
 /** @jsx jsx */
 import React from "react";
+import { createPortal } from "react-dom";
 import { jsx } from "@emotion/core";
 import { FaPlus } from "react-icons/fa";
 
 import { Card, Modal } from "./ui";
 import EmployeeForm from "./employee-form";
 
+import EmployeesContext from "../contexts/employees";
+
 function Employee({
   id,
   name,
   title,
   level,
-  employees,
   companyName,
   subordinates,
   highlightedTitle,
   onNewSubordinate
 }) {
+  const employees = React.useContext(EmployeesContext);
   const [isModalOpen, setIsModalOpen] = React.useState(false);
 
   function handleOpenClick() {
@@ -38,6 +41,16 @@ function Employee({
   }, [isModalOpen]);
 
   const isHighlighted = highlightedTitle === title;
+
+  const $portal = React.useMemo(() => {
+    let $portal = document.getElementById("portal");
+    if (!$portal) {
+      $portal = document.createElement("div");
+      $portal.setAttribute("id", "portal");
+      document.body.appendChild($portal);
+    }
+    return $portal;
+  }, []);
 
   return (
     <div>
@@ -98,18 +111,19 @@ function Employee({
               key={employee.id}
               {...employee}
               level={level + 1}
-              employees={employees}
               companyName={companyName}
               onNewSubordinate={onNewSubordinate}
               highlightedTitle={highlightedTitle}
             />
           ))}
       </section>
-      {isModalOpen && (
-        <Modal>
-          <EmployeeForm companyName={companyName} onSubmit={handleSubmit} />
-        </Modal>
-      )}
+      {isModalOpen &&
+        createPortal(
+          <Modal>
+            <EmployeeForm companyName={companyName} onSubmit={handleSubmit} />
+          </Modal>,
+          $portal
+        )}
     </div>
   );
 }
