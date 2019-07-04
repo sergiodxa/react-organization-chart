@@ -5,9 +5,11 @@ import { jsx } from "@emotion/core";
 import { FaPlus } from "react-icons/fa";
 
 import { Card, Modal } from "./ui";
-import EmployeeForm from "./employee-form";
+import Spinner from "./spinner";
 
 import EmployeesContext from "../contexts/employees";
+
+const EmployeeForm = React.lazy(() => import("./employee-form"));
 
 function Employee({
   id,
@@ -120,7 +122,9 @@ function Employee({
       {isModalOpen &&
         createPortal(
           <Modal>
-            <EmployeeForm companyName={companyName} onSubmit={handleSubmit} />
+            <React.Suspense fallback={<Spinner />}>
+              <EmployeeForm companyName={companyName} onSubmit={handleSubmit} />
+            </React.Suspense>
           </Modal>,
           $portal
         )}

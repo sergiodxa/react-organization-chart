@@ -2,37 +2,16 @@
 
 exports[`Filter 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-3 {
   background: white;
   border-radius: .5em;
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,.12);
   box-sizing: border-box;
   padding: 2rem;
   width: 100%;
-  padding: .5rem;
-  margin-bottom: 1rem;
-  position: absolute;
-  display: inline-block;
-  width: auto;
-  top: 1rem;
-  right: 1rem;
 }
 
-@media (max-width:460px) {
-  .emotion-4 {
-    position: static;
-    width: 100%;
-  }
-}
-
-@media (max-width:460px) {
-  .emotion-0 {
-    display: block;
-    margin: 1rem 0;
-  }
-}
-
-.emotion-3 {
+.emotion-2 {
   -webkit-appearance: none;
   color: rgb(0,0,0);
   display: -webkit-inline-box;
@@ -50,7 +29,7 @@ exports[`Filter 1`] = `
   position: relative;
   white-space: nowrap;
   line-height: 0;
-  width: 300px;
+  width: auto;
   min-width: 160px;
   background: rgb(255,255,255);
   outline: none;
@@ -64,13 +43,7 @@ exports[`Filter 1`] = `
   border-radius: 4px;
 }
 
-@media (max-width:460px) {
-  .emotion-3 {
-    width: 100%;
-  }
-}
-
-.emotion-1 {
+.emotion-0 {
   height: 100%;
   box-shadow: none;
   color: rgb(0,0,0);
@@ -88,7 +61,7 @@ exports[`Filter 1`] = `
   outline: none;
 }
 
-.emotion-2 {
+.emotion-1 {
   width: 30px;
   height: 100%;
   position: absolute;
@@ -113,21 +86,20 @@ exports[`Filter 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-3"
   >
     <form>
       <label
-        class="emotion-0"
         for="filter"
       >
         Highlight employees with title: 
       </label>
       <div
-        class="emotion-3"
+        class="emotion-2"
       >
         <select
           aria-label="Select a filter"
-          class="emotion-1"
+          class="emotion-0"
           id="filter"
           name="filter"
         >
@@ -148,7 +120,7 @@ exports[`Filter 1`] = `
           </option>
         </select>
         <div
-          class="emotion-2"
+          class="emotion-1"
         >
           <svg
             aria-label="arrow double"

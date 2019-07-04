@@ -2,14 +2,15 @@
 import React from "react";
 import { Global, jsx } from "@emotion/core";
 
-import CompanyNameForm from "./company-name-form";
-import EmployeeForm from "./employee-form";
-import Employee from "./employee";
-import Filter from "./filter";
-
+import Spinner from "./spinner";
 import { Provider as EmployeesProvider } from "../contexts/employees";
 
 const initialEmployees = localStorage.getItem("employees");
+
+const CompanyNameForm = React.lazy(() => import("./company-name-form"));
+const EmployeeForm = React.lazy(() => import("./employee-form"));
+const Employee = React.lazy(() => import("./employee"));
+const Filter = React.lazy(() => import("./filter"));
 
 function App() {
   const [companyName, setCompanyName] = React.useState(
@@ -85,42 +86,46 @@ function App() {
             }
           }}
         />
-        {!companyName && <CompanyNameForm onSubmit={handleCompanyNameSubmit} />}
-        {companyName && !employees && (
-          <EmployeeForm
-            onSubmit={handleCEOFormSubmit}
-            companyName={companyName}
-            title="CEO"
-          />
-        )}
-        {companyName && employees && (
-          <section
-            css={{
-              minHeight: "100vh",
-              width: "100%",
-              padding: "3rem",
-              boxSizing: "border-box",
-              "@media (max-width: 460px)": {
-                padding: "1rem"
-              }
-            }}
-          >
-            <Filter
-              titles={titles}
-              onChange={handleFilterChange}
-              value={highlightedTitle}
-            />
-            <Employee
-              {...Object.values(employees).find(
-                employee => employee.title === "CEO"
-              )}
+        <React.Suspense fallback={<Spinner />}>
+          {!companyName && (
+            <CompanyNameForm onSubmit={handleCompanyNameSubmit} />
+          )}
+          {companyName && !employees && (
+            <EmployeeForm
+              onSubmit={handleCEOFormSubmit}
               companyName={companyName}
-              onNewSubordinate={handleNewSubordinate}
-              level={0}
-              highlightedTitle={highlightedTitle}
+              title="CEO"
             />
-          </section>
-        )}
+          )}
+          {companyName && employees && (
+            <section
+              css={{
+                minHeight: "100vh",
+                width: "100%",
+                padding: "3rem",
+                boxSizing: "border-box",
+                "@media (max-width: 460px)": {
+                  padding: "1rem"
+                }
+              }}
+            >
+              <Filter
+                titles={titles}
+                onChange={handleFilterChange}
+                value={highlightedTitle}
+              />
+              <Employee
+                {...Object.values(employees).find(
+                  employee => employee.title === "CEO"
+                )}
+                companyName={companyName}
+                onNewSubordinate={handleNewSubordinate}
+                level={0}
+                highlightedTitle={highlightedTitle}
+              />
+            </section>
+          )}
+        </React.Suspense>
       </main>
     </EmployeesProvider>
   );

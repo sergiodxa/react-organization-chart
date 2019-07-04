@@ -2,7 +2,21 @@
 
 exports[`App 1`] = `
 <DocumentFragment>
-  .emotion-5 {
+  @keyframes animation-0 {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.emotion-1 {
   width: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -19,91 +33,30 @@ exports[`App 1`] = `
   align-items: center;
 }
 
-.emotion-4 {
-  background: white;
-  border-radius: .5em;
-  box-shadow: 0px 2px 5px 0px rgba(0,0,0,.12);
-  box-sizing: border-box;
-  padding: 2rem;
-  width: 100%;
-  max-width: 450px;
-}
-
 .emotion-0 {
-  font-size: 2rem;
-  font-weight: normal;
-  margin: 0;
-}
-
-.emotion-2 {
-  margin: 2rem 0;
-}
-
-.emotion-1 {
-  background: none;
-  border: 1px solid #eaeaea;
-  border-radius: .25rem;
-  box-sizing: border-box;
-  display: block;
-  font-size: 1rem;
-  padding: .5rem;
-  width: 100%;
-}
-
-.emotion-1:focus {
-  outline: none;
-  border-color: #444444;
-}
-
-.emotion-3 {
-  background-color: black;
-  border: 1px solid black;
-  border-radius: .25rem;
-  color: white;
-  cursor: pointer;
-  font-size: .8rem;
-  padding: .75rem 0;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.emotion-3:hover {
-  background-color: white;
-  color: black;
+  -webkit-animation: animation-0 2000ms ease infinite;
+  animation: animation-0 2000ms ease infinite;
 }
 
 <main
-    class="emotion-5"
+    class="emotion-1"
   >
     <div
-      class="emotion-4"
+      class="emotion-0"
     >
-      <form>
-        <h1
-          class="emotion-0"
-        >
-          Company Name
-        </h1>
-        <div
-          class="emotion-2"
-        >
-          <input
-            aria-label="Enter your company name"
-            class="emotion-1"
-            placeholder="ACME Inc."
-            type="text"
-            value=""
-          />
-        </div>
-        <button
-          class="emotion-3"
-        >
-          Set company name
-        </button>
-      </form>
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 512 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"
+        />
+      </svg>
     </div>
   </main>
 </DocumentFragment>
@@ -111,7 +64,21 @@ exports[`App 1`] = `
 
 exports[`App 2`] = `
 <DocumentFragment>
-  .emotion-5 {
+  @keyframes animation-0 {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.emotion-1 {
   width: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -128,93 +95,30 @@ exports[`App 2`] = `
   align-items: center;
 }
 
-.emotion-1 {
-  background: none;
-  border: 1px solid #eaeaea;
-  border-radius: .25rem;
-  box-sizing: border-box;
-  display: block;
-  font-size: 1rem;
-  padding: .5rem;
-  width: 100%;
-}
-
-.emotion-1:focus {
-  outline: none;
-  border-color: #444444;
-}
-
-.emotion-3 {
-  background-color: black;
-  border: 1px solid black;
-  border-radius: .25rem;
-  color: white;
-  cursor: pointer;
-  font-size: .8rem;
-  padding: .75rem 0;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.emotion-3:hover {
-  background-color: white;
-  color: black;
-}
-
-.emotion-4 {
-  background: white;
-  border-radius: .5em;
-  box-shadow: 0px 2px 5px 0px rgba(0,0,0,.12);
-  box-sizing: border-box;
-  padding: 2rem;
-  width: 100%;
-  max-width: 450px;
-}
-
 .emotion-0 {
-  font-size: 2rem;
-  font-weight: normal;
-  margin: 0;
-}
-
-.emotion-2 {
-  margin: 2rem 0;
+  -webkit-animation: animation-0 2000ms ease infinite;
+  animation: animation-0 2000ms ease infinite;
 }
 
 <main
-    class="emotion-5"
+    class="emotion-1"
   >
     <div
-      class="emotion-4"
+      class="emotion-0"
     >
-      <form>
-        <h1
-          class="emotion-0"
-        >
-          Testing Inc.'s CEO Name
-        </h1>
-        <div
-          class="emotion-2"
-        >
-          <input
-            aria-label="Write the employee name"
-            class="emotion-1"
-            name="name"
-            placeholder="John Doe"
-            required=""
-            type="text"
-            value=""
-          />
-        </div>
-        <button
-          class="emotion-3"
-        >
-          Create employee
-        </button>
-      </form>
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 512 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"
+        />
+      </svg>
     </div>
   </main>
 </DocumentFragment>
@@ -222,7 +126,21 @@ exports[`App 2`] = `
 
 exports[`App 3`] = `
 <DocumentFragment>
-  .emotion-11 {
+  @keyframes animation-0 {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.emotion-2 {
   width: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -239,7 +157,12 @@ exports[`App 3`] = `
   align-items: center;
 }
 
-.emotion-10 {
+.emotion-1 {
+  -webkit-animation: animation-0 2000ms ease infinite;
+  animation: animation-0 2000ms ease infinite;
+}
+
+.emotion-0 {
   min-height: 100vh;
   width: 100%;
   padding: 3rem;
@@ -247,268 +170,42 @@ exports[`App 3`] = `
 }
 
 @media (max-width:460px) {
-  .emotion-10 {
+  .emotion-0 {
     padding: 1rem;
   }
 }
 
-.emotion-4 {
-  background: white;
-  border-radius: .5em;
-  box-shadow: 0px 2px 5px 0px rgba(0,0,0,.12);
-  box-sizing: border-box;
-  padding: 2rem;
-  width: 100%;
-  padding: .5rem;
-  margin-bottom: 1rem;
-  position: absolute;
-  display: inline-block;
-  width: auto;
-  top: 1rem;
-  right: 1rem;
-}
-
-@media (max-width:460px) {
-  .emotion-4 {
-    position: static;
-    width: 100%;
-  }
-}
-
-@media (max-width:460px) {
-  .emotion-0 {
-    display: block;
-    margin: 1rem 0;
-  }
-}
-
-.emotion-3 {
-  -webkit-appearance: none;
-  color: rgb(0,0,0);
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 40px;
-  font-size: 12px;
-  text-transform: uppercase;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: 100;
-  position: relative;
-  white-space: nowrap;
-  line-height: 0;
-  width: 300px;
-  min-width: 160px;
-  background: rgb(255,255,255);
-  outline: none;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(234,234,234);
-  border-image: initial;
-  overflow: hidden;
-  -webkit-transition: border 0.2s ease 0s,background 0.2s ease 0s,color 0.2s ease-out 0s,box-shadow 0.2s ease 0s;
-  transition: border 0.2s ease 0s,background 0.2s ease 0s,color 0.2s ease-out 0s,box-shadow 0.2s ease 0s;
-  border-radius: 4px;
-}
-
-@media (max-width:460px) {
-  .emotion-3 {
-    width: 100%;
-  }
-}
-
-.emotion-1 {
-  height: 100%;
-  box-shadow: none;
-  color: rgb(0,0,0);
-  line-height: 40;
-  font-size: 14px;
-  margin-right: -20px;
-  width: calc(100% + 20px);
-  text-transform: none;
-  border-width: initial;
-  border-style: none;
-  border-color: initial;
-  border-image: initial;
-  background: none transparent;
-  padding: 0px 76px 0px 16px;
-  outline: none;
-}
-
-.emotion-2 {
-  width: 30px;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-left: 1px solid rgb(234,234,234);
-  background: rgb(255,255,255);
-  -webkit-transition: border 0.2s ease 0s;
-  transition: border 0.2s ease 0s;
-}
-
-.emotion-8 {
-  background: white;
-  border-radius: .5em;
-  box-shadow: 0px 2px 5px 0px rgba(0,0,0,.12);
-  box-sizing: border-box;
-  padding: 2rem;
-  width: 100%;
-  display: inline-block;
-  padding: 1rem 3rem;
-  width: auto;
-  position: relative;
-  background-color: white;
-  color: black;
-}
-
-.emotion-5 {
-  background: none;
-  border: none;
-  color: black;
-  cursor: pointer;
-  position: absolute;
-  top: .5rem;
-  right: .5rem;
-  outline: none;
-}
-
-.emotion-6 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0;
-  margin-bottom: .5rem;
-}
-
-.emotion-7 {
-  font-size: .8rem;
-  font-weight: lighter;
-  margin: 0;
-}
-
-.emotion-9 {
-  margin: 1rem 0 0 3rem;
-}
-
 <main
-    class="emotion-11"
+    class="emotion-2"
   >
     <section
-      class="emotion-10"
+      class="emotion-0"
+      style="display: none;"
+    />
+    <div
+      class="emotion-1"
     >
-      <div
-        class="emotion-4"
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 512 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <form>
-          <label
-            class="emotion-0"
-            for="filter"
-          >
-            Highlight employees with title: 
-          </label>
-          <div
-            class="emotion-3"
-          >
-            <select
-              aria-label="Select a filter"
-              class="emotion-1"
-              id="filter"
-              name="filter"
-            >
-              <option
-                value=""
-              >
-                -- Select an title --
-              </option>
-              <option
-                value="CEO"
-              >
-                CEO
-              </option>
-            </select>
-            <div
-              class="emotion-2"
-            >
-              <svg
-                aria-label="arrow double"
-                fill="none"
-                height="17"
-                viewBox="0 0 7 12"
-                width="7"
-              >
-                <path
-                  d="M0.642491 3.35053L0.292945 3.70804L1.00798 4.40714L1.35752 4.04962L0.642491 3.35053ZM3.75752 1.59491L4.10707 1.23739L3.39204 0.538299L3.04249 0.895815L3.75752 1.59491ZM5.58506 4.04651L5.93149 4.40704L6.65256 3.71417L6.30613 3.35364L5.58506 4.04651ZM3.95354 0.9053L3.6071 0.544767L2.88604 1.23763L3.23247 1.59817L3.95354 0.9053ZM1.35752 7.95041L1.00797 7.59289L0.292938 8.29198L0.642485 8.6495L1.35752 7.95041ZM3.04248 11.1042L3.39203 11.4617L4.10706 10.7626L3.75751 10.4051L3.04248 11.1042ZM6.36054 8.64636L6.70697 8.28583L5.98591 7.59296L5.63947 7.95349L6.36054 8.64636ZM3.28688 10.4018L2.94045 10.7624L3.66152 11.4552L4.00795 11.0947L3.28688 10.4018ZM1.35752 4.04962L3.75752 1.59491L3.04249 0.895815L0.642491 3.35053L1.35752 4.04962ZM6.30613 3.35364L3.95354 0.9053L3.23247 1.59817L5.58506 4.04651L6.30613 3.35364ZM0.642485 8.6495L3.04248 11.1042L3.75751 10.4051L1.35752 7.95041L0.642485 8.6495ZM5.63947 7.95349L3.28688 10.4018L4.00795 11.0947L6.36054 8.64636L5.63947 7.95349Z"
-                  fill="#000"
-                />
-              </svg>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div>
-        <div
-          class="emotion-8"
-          id="1560137100000"
-        >
-          <button
-            aria-label="Add new employee under John Doe"
-            class="emotion-5"
-          >
-            <svg
-              fill="currentColor"
-              height="1em"
-              stroke="currentColor"
-              stroke-width="0"
-              viewBox="0 0 448 512"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
-              />
-            </svg>
-          </button>
-          <h2
-            class="emotion-6"
-          >
-            John Doe
-          </h2>
-          <h3
-            class="emotion-7"
-          >
-            Title: 
-            <strong>
-              CEO
-            </strong>
-          </h3>
-        </div>
-        <section
-          class="emotion-9"
+        <path
+          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"
         />
-      </div>
-    </section>
+      </svg>
+    </div>
   </main>
 </DocumentFragment>
 `;
 
 exports[`App 4`] = `
 <DocumentFragment>
-  .emotion-11 {
+  .emotion-10 {
   width: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -525,7 +222,7 @@ exports[`App 4`] = `
   align-items: center;
 }
 
-.emotion-10 {
+.emotion-9 {
   min-height: 100vh;
   width: 100%;
   padding: 3rem;
@@ -533,42 +230,21 @@ exports[`App 4`] = `
 }
 
 @media (max-width:460px) {
-  .emotion-10 {
+  .emotion-9 {
     padding: 1rem;
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   background: white;
   border-radius: .5em;
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,.12);
   box-sizing: border-box;
   padding: 2rem;
   width: 100%;
-  padding: .5rem;
-  margin-bottom: 1rem;
-  position: absolute;
-  display: inline-block;
-  width: auto;
-  top: 1rem;
-  right: 1rem;
 }
 
-@media (max-width:460px) {
-  .emotion-4 {
-    position: static;
-    width: 100%;
-  }
-}
-
-@media (max-width:460px) {
-  .emotion-0 {
-    display: block;
-    margin: 1rem 0;
-  }
-}
-
-.emotion-3 {
+.emotion-2 {
   -webkit-appearance: none;
   color: rgb(0,0,0);
   display: -webkit-inline-box;
@@ -586,7 +262,7 @@ exports[`App 4`] = `
   position: relative;
   white-space: nowrap;
   line-height: 0;
-  width: 300px;
+  width: auto;
   min-width: 160px;
   background: rgb(255,255,255);
   outline: none;
@@ -600,13 +276,7 @@ exports[`App 4`] = `
   border-radius: 4px;
 }
 
-@media (max-width:460px) {
-  .emotion-3 {
-    width: 100%;
-  }
-}
-
-.emotion-1 {
+.emotion-0 {
   height: 100%;
   box-shadow: none;
   color: rgb(0,0,0);
@@ -624,7 +294,7 @@ exports[`App 4`] = `
   outline: none;
 }
 
-.emotion-2 {
+.emotion-1 {
   width: 30px;
   height: 100%;
   position: absolute;
@@ -648,7 +318,7 @@ exports[`App 4`] = `
   transition: border 0.2s ease 0s;
 }
 
-.emotion-8 {
+.emotion-7 {
   background: white;
   border-radius: .5em;
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,.12);
@@ -663,7 +333,7 @@ exports[`App 4`] = `
   color: black;
 }
 
-.emotion-5 {
+.emotion-4 {
   background: none;
   border: none;
   color: black;
@@ -674,45 +344,45 @@ exports[`App 4`] = `
   outline: none;
 }
 
-.emotion-6 {
+.emotion-5 {
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
   margin-bottom: .5rem;
 }
 
-.emotion-7 {
+.emotion-6 {
   font-size: .8rem;
   font-weight: lighter;
   margin: 0;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 1rem 0 0 3rem;
 }
 
 <main
-    class="emotion-11"
+    class="emotion-10"
   >
     <section
-      class="emotion-10"
+      class="emotion-9"
+      style=""
     >
       <div
-        class="emotion-4"
+        class="emotion-3"
       >
         <form>
           <label
-            class="emotion-0"
             for="filter"
           >
             Highlight employees with title: 
           </label>
           <div
-            class="emotion-3"
+            class="emotion-2"
           >
             <select
               aria-label="Select a filter"
-              class="emotion-1"
+              class="emotion-0"
               id="filter"
               name="filter"
             >
@@ -728,7 +398,7 @@ exports[`App 4`] = `
               </option>
             </select>
             <div
-              class="emotion-2"
+              class="emotion-1"
             >
               <svg
                 aria-label="arrow double"
@@ -748,12 +418,12 @@ exports[`App 4`] = `
       </div>
       <div>
         <div
-          class="emotion-8"
+          class="emotion-7"
           id="1560137100000"
         >
           <button
             aria-label="Add new employee under John Doe"
-            class="emotion-5"
+            class="emotion-4"
           >
             <svg
               fill="currentColor"
@@ -770,12 +440,12 @@ exports[`App 4`] = `
             </svg>
           </button>
           <h2
-            class="emotion-6"
+            class="emotion-5"
           >
             John Doe
           </h2>
           <h3
-            class="emotion-7"
+            class="emotion-6"
           >
             Title: 
             <strong>
@@ -784,7 +454,7 @@ exports[`App 4`] = `
           </h3>
         </div>
         <section
-          class="emotion-9"
+          class="emotion-8"
         />
       </div>
     </section>
@@ -794,7 +464,7 @@ exports[`App 4`] = `
 
 exports[`App 5`] = `
 <DocumentFragment>
-  .emotion-11 {
+  .emotion-10 {
   width: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -811,7 +481,7 @@ exports[`App 5`] = `
   align-items: center;
 }
 
-.emotion-10 {
+.emotion-9 {
   min-height: 100vh;
   width: 100%;
   padding: 3rem;
@@ -819,42 +489,21 @@ exports[`App 5`] = `
 }
 
 @media (max-width:460px) {
-  .emotion-10 {
+  .emotion-9 {
     padding: 1rem;
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   background: white;
   border-radius: .5em;
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,.12);
   box-sizing: border-box;
   padding: 2rem;
   width: 100%;
-  padding: .5rem;
-  margin-bottom: 1rem;
-  position: absolute;
-  display: inline-block;
-  width: auto;
-  top: 1rem;
-  right: 1rem;
 }
 
-@media (max-width:460px) {
-  .emotion-4 {
-    position: static;
-    width: 100%;
-  }
-}
-
-@media (max-width:460px) {
-  .emotion-0 {
-    display: block;
-    margin: 1rem 0;
-  }
-}
-
-.emotion-3 {
+.emotion-2 {
   -webkit-appearance: none;
   color: rgb(0,0,0);
   display: -webkit-inline-box;
@@ -872,7 +521,7 @@ exports[`App 5`] = `
   position: relative;
   white-space: nowrap;
   line-height: 0;
-  width: 300px;
+  width: auto;
   min-width: 160px;
   background: rgb(255,255,255);
   outline: none;
@@ -886,13 +535,7 @@ exports[`App 5`] = `
   border-radius: 4px;
 }
 
-@media (max-width:460px) {
-  .emotion-3 {
-    width: 100%;
-  }
-}
-
-.emotion-1 {
+.emotion-0 {
   height: 100%;
   box-shadow: none;
   color: rgb(0,0,0);
@@ -910,7 +553,7 @@ exports[`App 5`] = `
   outline: none;
 }
 
-.emotion-2 {
+.emotion-1 {
   width: 30px;
   height: 100%;
   position: absolute;
@@ -934,7 +577,7 @@ exports[`App 5`] = `
   transition: border 0.2s ease 0s;
 }
 
-.emotion-8 {
+.emotion-7 {
   background: white;
   border-radius: .5em;
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,.12);
@@ -949,7 +592,7 @@ exports[`App 5`] = `
   color: black;
 }
 
-.emotion-5 {
+.emotion-4 {
   background: none;
   border: none;
   color: black;
@@ -960,45 +603,45 @@ exports[`App 5`] = `
   outline: none;
 }
 
-.emotion-6 {
+.emotion-5 {
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
   margin-bottom: .5rem;
 }
 
-.emotion-7 {
+.emotion-6 {
   font-size: .8rem;
   font-weight: lighter;
   margin: 0;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 1rem 0 0 3rem;
 }
 
 <main
-    class="emotion-11"
+    class="emotion-10"
   >
     <section
-      class="emotion-10"
+      class="emotion-9"
+      style=""
     >
       <div
-        class="emotion-4"
+        class="emotion-3"
       >
         <form>
           <label
-            class="emotion-0"
             for="filter"
           >
             Highlight employees with title: 
           </label>
           <div
-            class="emotion-3"
+            class="emotion-2"
           >
             <select
               aria-label="Select a filter"
-              class="emotion-1"
+              class="emotion-0"
               id="filter"
               name="filter"
             >
@@ -1014,7 +657,7 @@ exports[`App 5`] = `
               </option>
             </select>
             <div
-              class="emotion-2"
+              class="emotion-1"
             >
               <svg
                 aria-label="arrow double"
@@ -1034,12 +677,12 @@ exports[`App 5`] = `
       </div>
       <div>
         <div
-          class="emotion-8"
+          class="emotion-7"
           id="1560137100000"
         >
           <button
             aria-label="Add new employee under John Doe"
-            class="emotion-5"
+            class="emotion-4"
           >
             <svg
               fill="currentColor"
@@ -1056,12 +699,12 @@ exports[`App 5`] = `
             </svg>
           </button>
           <h2
-            class="emotion-6"
+            class="emotion-5"
           >
             John Doe
           </h2>
           <h3
-            class="emotion-7"
+            class="emotion-6"
           >
             Title: 
             <strong>
@@ -1070,7 +713,7 @@ exports[`App 5`] = `
           </h3>
         </div>
         <section
-          class="emotion-9"
+          class="emotion-8"
         />
       </div>
     </section>
@@ -1080,7 +723,7 @@ exports[`App 5`] = `
 
 exports[`App 6`] = `
 <DocumentFragment>
-  .emotion-16 {
+  .emotion-15 {
   width: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -1097,7 +740,7 @@ exports[`App 6`] = `
   align-items: center;
 }
 
-.emotion-15 {
+.emotion-14 {
   min-height: 100vh;
   width: 100%;
   padding: 3rem;
@@ -1105,42 +748,21 @@ exports[`App 6`] = `
 }
 
 @media (max-width:460px) {
-  .emotion-15 {
+  .emotion-14 {
     padding: 1rem;
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   background: white;
   border-radius: .5em;
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,.12);
   box-sizing: border-box;
   padding: 2rem;
   width: 100%;
-  padding: .5rem;
-  margin-bottom: 1rem;
-  position: absolute;
-  display: inline-block;
-  width: auto;
-  top: 1rem;
-  right: 1rem;
 }
 
-@media (max-width:460px) {
-  .emotion-4 {
-    position: static;
-    width: 100%;
-  }
-}
-
-@media (max-width:460px) {
-  .emotion-0 {
-    display: block;
-    margin: 1rem 0;
-  }
-}
-
-.emotion-3 {
+.emotion-2 {
   -webkit-appearance: none;
   color: rgb(0,0,0);
   display: -webkit-inline-box;
@@ -1158,7 +780,7 @@ exports[`App 6`] = `
   position: relative;
   white-space: nowrap;
   line-height: 0;
-  width: 300px;
+  width: auto;
   min-width: 160px;
   background: rgb(255,255,255);
   outline: none;
@@ -1172,13 +794,7 @@ exports[`App 6`] = `
   border-radius: 4px;
 }
 
-@media (max-width:460px) {
-  .emotion-3 {
-    width: 100%;
-  }
-}
-
-.emotion-1 {
+.emotion-0 {
   height: 100%;
   box-shadow: none;
   color: rgb(0,0,0);
@@ -1196,7 +812,7 @@ exports[`App 6`] = `
   outline: none;
 }
 
-.emotion-2 {
+.emotion-1 {
   width: 30px;
   height: 100%;
   position: absolute;
@@ -1220,7 +836,7 @@ exports[`App 6`] = `
   transition: border 0.2s ease 0s;
 }
 
-.emotion-8 {
+.emotion-7 {
   background: white;
   border-radius: .5em;
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,.12);
@@ -1235,7 +851,7 @@ exports[`App 6`] = `
   color: black;
 }
 
-.emotion-5 {
+.emotion-4 {
   background: none;
   border: none;
   color: black;
@@ -1246,45 +862,45 @@ exports[`App 6`] = `
   outline: none;
 }
 
-.emotion-6 {
+.emotion-5 {
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
   margin-bottom: .5rem;
 }
 
-.emotion-7 {
+.emotion-6 {
   font-size: .8rem;
   font-weight: lighter;
   margin: 0;
 }
 
-.emotion-13 {
+.emotion-12 {
   margin: 1rem 0 0 3rem;
 }
 
 <main
-    class="emotion-16"
+    class="emotion-15"
   >
     <section
-      class="emotion-15"
+      class="emotion-14"
+      style=""
     >
       <div
-        class="emotion-4"
+        class="emotion-3"
       >
         <form>
           <label
-            class="emotion-0"
             for="filter"
           >
             Highlight employees with title: 
           </label>
           <div
-            class="emotion-3"
+            class="emotion-2"
           >
             <select
               aria-label="Select a filter"
-              class="emotion-1"
+              class="emotion-0"
               id="filter"
               name="filter"
             >
@@ -1305,7 +921,7 @@ exports[`App 6`] = `
               </option>
             </select>
             <div
-              class="emotion-2"
+              class="emotion-1"
             >
               <svg
                 aria-label="arrow double"
@@ -1325,12 +941,12 @@ exports[`App 6`] = `
       </div>
       <div>
         <div
-          class="emotion-8"
+          class="emotion-7"
           id="1560137100000"
         >
           <button
             aria-label="Add new employee under John Doe"
-            class="emotion-5"
+            class="emotion-4"
           >
             <svg
               fill="currentColor"
@@ -1347,12 +963,12 @@ exports[`App 6`] = `
             </svg>
           </button>
           <h2
-            class="emotion-6"
+            class="emotion-5"
           >
             John Doe
           </h2>
           <h3
-            class="emotion-7"
+            class="emotion-6"
           >
             Title: 
             <strong>
@@ -1361,16 +977,16 @@ exports[`App 6`] = `
           </h3>
         </div>
         <section
-          class="emotion-13"
+          class="emotion-12"
         >
           <div>
             <div
-              class="emotion-8"
+              class="emotion-7"
               id="1560137160000"
             >
               <button
                 aria-label="Add new employee under John Wick"
-                class="emotion-5"
+                class="emotion-4"
               >
                 <svg
                   fill="currentColor"
@@ -1387,12 +1003,12 @@ exports[`App 6`] = `
                 </svg>
               </button>
               <h2
-                class="emotion-6"
+                class="emotion-5"
               >
                 John Wick
               </h2>
               <h3
-                class="emotion-7"
+                class="emotion-6"
               >
                 Title: 
                 <strong>
@@ -1401,7 +1017,7 @@ exports[`App 6`] = `
               </h3>
             </div>
             <section
-              class="emotion-13"
+              class="emotion-12"
             />
           </div>
         </section>
